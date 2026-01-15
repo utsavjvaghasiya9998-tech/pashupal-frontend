@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 import axios from "axios";
-import { MdAdd, MdDelete, MdAttachMoney } from "react-icons/md";
+import { MdAdd, MdDelete, MdAttachMoney, MdCurrencyRupee } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { CommonTable } from "../../components/CommomTable";
 import { Pagination } from "../../components/Pagination";
@@ -90,7 +90,7 @@ export const Expenses = () => {
             {/* Header */}
             <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-2">
-                    <MdAttachMoney className="text-3xl text-green-700" />
+                    <MdCurrencyRupee className="text-3xl text-green-700" />
                     <h1 className="text-2xl font-bold text-gray-800">Expenses</h1>
                 </div>
 

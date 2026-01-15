@@ -9,6 +9,7 @@ import {
     MdNotes,
     MdSave,
     MdCategory,
+    MdCurrencyRupee,
 } from "react-icons/md";
 
 const API_URL = import.meta.env.VITE_API_URL;
@@ -92,7 +93,7 @@ export const AddExpense = () => {
                         <Input label="Title" icon={<MdTitle />} name="title" value={form.title} onChange={handleChange} required />
 
                         {/* Amount */}
-                        <Input label="Amount (₹)" icon={<MdAttachMoney />} name="amount" type="number" value={form.amount} onChange={handleChange} required />
+                        <Input label="Amount (₹)" icon={<MdCurrencyRupee />} name="amount" type="number" value={form.amount} onChange={handleChange} required />
 
                         {/* Date */}
                         <Input label="Date" icon={<MdDateRange />} name="date" type="date" value={form.date} onChange={handleChange} />
