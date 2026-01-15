@@ -69,7 +69,7 @@ export const Dashboard = () => {
                     )}
                     <StatCard title="Total Stock Milk (L)" value={stats.totalStockMilk} icon={<MdLocalDrink />} color="purple" />
                     <StatCard title="Total  Milk (L)" value={stats.totalMilk} icon={<MdLocalDrink />} color="purple" />
-                    <StatCard title="Total Expense" value={stats.totalExpense} icon={<MdAttachMoney />} color="yellow" />
+                    <StatCard title="Total Expense" value={stats.totalExpense} icon={<MdCurrencyRupee />} color="yellow" />
                     {role==="admin"&&(
                     <StatCard title="Total Income (₹)" value={stats.totalIncome} icon={<MdCurrencyRupee />} color="green" />
                     )}

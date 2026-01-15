@@ -8,6 +8,7 @@ import {
     MdShoppingCart,
     MdAssessment,
     MdAttachMoney,
+    MdCurrencyRupee,
 } from "react-icons/md";
 import { AiOutlineHistory } from "react-icons/ai";
 
@@ -135,7 +136,7 @@ export const Sidebar = ({ isOpen, setIsOpen }) => {
                             className={linkClass}
                             onClick={() => setIsOpen(false)}
                         >
-                            <MdAttachMoney className="text-xl" />
+                            <MdCurrencyRupee className="text-xl" />
                             <span>Expenses</span>
                         </NavLink>
                     )}
