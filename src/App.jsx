@@ -27,6 +27,7 @@ import UserPayments from "./admin/components/Payments";
 import { Reports } from "./admin/pages/Reports";
 import { Expenses } from "./admin/pages/Expense/Expense";
 import { AddExpense } from "./admin/pages/Expense/AddExpense";
+import NotFound from "./admin/components/NotFound";
 
 
 
@@ -73,6 +74,7 @@ function App() {
 
                 </Route>
             </Route>
+             <Route path="*" element={<NotFound />} />
         </Routes>
     );
 }
