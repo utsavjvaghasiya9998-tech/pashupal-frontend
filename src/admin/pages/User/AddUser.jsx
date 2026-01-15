@@ -29,7 +29,7 @@ export const AddUser = () => {
             await axios.post(`${API_URL}/user/add`, form, {
                 headers: { Authorization: `Bearer ${token}` },
             });
-            navigate("/admin/customer");
+            navigate("/customer");
         } catch (err) {
             setError(err.response?.data?.message || "Failed to add user");
         } finally {
@@ -47,7 +47,7 @@ export const AddUser = () => {
             loading={loading}
             error={error}
             submitText="Add Customer"
-            cancelPath="/admin/customer"
+            cancelPath="/customer"
             navigate={navigate}
             showPassword={true}
         />

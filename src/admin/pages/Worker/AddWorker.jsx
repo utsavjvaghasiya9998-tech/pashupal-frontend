@@ -36,7 +36,7 @@ export const AddWorker = () => {
             setSuccess("Worker added successfully!");
 
             setTimeout(() => {
-                navigate("/admin/workers");
+                navigate("/workers");
             }, 800);
         } catch (err) {
             setError(err.response?.data?.message || "Failed to add worker");
@@ -56,7 +56,7 @@ export const AddWorker = () => {
             error={error}
             success={success}
             submitText="Save Worker"
-            cancelPath="/admin/workers"
+            cancelPath="/workers"
             navigate={navigate}
             showPassword={true}
         />

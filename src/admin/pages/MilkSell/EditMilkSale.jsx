@@ -85,7 +85,7 @@ export const EditMilkSale = () => {
                 }
             );
 
-            navigate("/admin/milk-sell");
+            navigate("/milk-sell");
         } catch (err) {
             console.error("UPDATE SALE ERROR:", err);
             setError(err.response?.data?.message || "Failed to update sale");
@@ -113,7 +113,7 @@ export const EditMilkSale = () => {
             loading={saving}
             error={error}
             submitText="Update Sale"
-            cancelPath="/admin/milk-sell"
+            cancelPath="/milk-sell"
             navigate={navigate}
         />
     );

@@ -63,7 +63,7 @@ export const AddMilk = () => {
             });
             console.log("payload",payload);
             
-             navigate("/admin/milk");
+             navigate("/milk");
         } catch (err) {
             setError(err.response?.data?.message || "Failed to add milk record");
         } finally {
@@ -82,7 +82,7 @@ export const AddMilk = () => {
             loading={loading}
             error={error}
             submitText="Save Record"
-            cancelPath="/admin/milk"
+            cancelPath="/milk"
             navigate={navigate}
         />
     );

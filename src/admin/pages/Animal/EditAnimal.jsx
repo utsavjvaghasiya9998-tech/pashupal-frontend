@@ -45,7 +45,7 @@ export const EditAnimal = () => {
                 headers: { Authorization: `Bearer ${token}` },
             });
 
-            navigate("/admin/animals");
+            navigate("/animals");
         } catch (err) {
             setError(err?.response?.data?.message || "Failed to update animal");
         } finally {

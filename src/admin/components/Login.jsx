@@ -40,9 +40,9 @@ const Login = () => {
             localStorage.setItem("role", role);
             localStorage.setItem("user", JSON.stringify(user));
             if(role==="customer"){
-                navigate('/admin/customer-history')
+                navigate('/customer-history')
             }else{
-                navigate("/admin");
+                navigate("/");
             }
 
         } catch (err) {

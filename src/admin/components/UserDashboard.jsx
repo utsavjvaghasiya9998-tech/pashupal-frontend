@@ -102,7 +102,7 @@ const UserDashboard = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                 <NavLink
-                    to="/admin/customer-history"
+                    to="/customer-history"
                     className="bg-white hover:bg-green-50 transition border rounded-xl shadow p-6 flex items-center gap-4 cursor-pointer"
                 >
                     <div className="text-3xl text-green-700">
@@ -117,7 +117,7 @@ const UserDashboard = () => {
                 </NavLink>
 
                 <NavLink
-                    to="/admin/user/payments"
+                    to="/user/payments"
                     className="bg-white hover:bg-green-50 transition border rounded-xl shadow p-6 flex items-center gap-4 cursor-pointer"
                 >
                     <div className="text-3xl text-green-700">

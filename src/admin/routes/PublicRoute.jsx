@@ -5,7 +5,7 @@ const PublicRoute = () => {
 
   // ✅ If already logged in, redirect to admin dashboard
   if (token) {
-    return <Navigate to="/admin" replace />;
+    return <Navigate to="/" replace />;
   }
 
   return <Outlet />;

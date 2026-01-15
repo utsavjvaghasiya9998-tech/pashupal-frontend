@@ -118,7 +118,7 @@ export const MilkSell = () => {
                 </div>
 
                 <NavLink
-                    to="/admin/milk-sell/add"
+                    to="/milk-sell/add"
                     className="flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded"
                 >
                     <MdAdd className="text-xl" />
@@ -135,7 +135,7 @@ export const MilkSell = () => {
                 actions={(sale) => (
                     <>
                         <NavLink
-                            to={`/admin/milk-sell/edit/${sale._id}`}
+                            to={`/milk-sell/edit/${sale._id}`}
                             className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white p-2 rounded"
                             title="Edit"
                         >

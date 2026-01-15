@@ -86,7 +86,7 @@ export const EditMilk = () => {
                 headers: { Authorization: `Bearer ${token}` },
             });
 
-            navigate("/admin/milk");
+            navigate("/milk");
         } catch (err) {
             setError(err.response?.data?.message || "Failed to update record");
         } finally {
@@ -119,7 +119,7 @@ export const EditMilk = () => {
             loading={saving}
             error={error}
             submitText="Update Record"
-            cancelPath="/admin/milk"
+            cancelPath="/milk"
             navigate={navigate}
         />
     );

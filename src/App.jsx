@@ -44,7 +44,7 @@ function App() {
 
             {/* ================= PROTECTED ADMIN ROUTES ================= */}
             <Route element={<AdminProtectedRoute />}>
-                <Route path="/admin" element={<AdminLayout />}>
+                <Route path="/" element={<AdminLayout />}>
                     <Route index element={<Dashboard />} />
                     <Route path="workers" element={<Workers />} />
                     <Route path="worker/add" element={<AddWorker />} />
@@ -65,7 +65,7 @@ function App() {
                     <Route path="user/payments" element={<UserPayments />} />
                     <Route path="reports" element={<Reports />} />
                     <Route
-                        path="/admin/customer-history"
+                        path="/customer-history"
                         element={<CustomerMilkHistory />}
                     />
                     <Route path="expenses" element={<Expenses />} />

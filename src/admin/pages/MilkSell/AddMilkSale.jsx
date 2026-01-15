@@ -54,7 +54,7 @@ export const AddMilkSale = () => {
                 { headers: { Authorization: `Bearer ${token}` } }
             );
 
-            navigate("/admin/milk-sell");
+            navigate("/milk-sell");
         } catch (err) {
             setError("Failed to add milk sale");
         } finally {
@@ -73,7 +73,7 @@ export const AddMilkSale = () => {
             loading={loading}
             error={error}
             submitText="Save Sale"
-            cancelPath="/admin/milk-sell"
+            cancelPath="/milk-sell"
             navigate={navigate}
         />
     );

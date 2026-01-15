@@ -121,7 +121,7 @@ export const Users = () => {
                 <h1 className="text-2xl font-bold text-gray-800">Customers</h1>
 
                 <NavLink
-                    to="/admin/customer/add"
+                    to="/customer/add"
                     className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded"
                 >
                     + Add Customer
@@ -137,7 +137,7 @@ export const Users = () => {
                 actions={(user) => (
                     <div className="flex justify-center gap-3">
                         <NavLink
-                            to={`/admin/customer/edit/${user._id}`}
+                            to={`/customer/edit/${user._id}`}
                             className="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-lg transition"
                             title="View Customer"
                         >

@@ -59,7 +59,7 @@ export const EditUser = () => {
                 headers: { Authorization: `Bearer ${token}` },
             });
 
-            navigate("/admin/customer");
+            navigate("/customer");
         } catch (err) {
             console.error("UPDATE USER ERROR:", err);
             setError(err.response?.data?.message || "Failed to update user");
@@ -86,7 +86,7 @@ export const EditUser = () => {
             loading={saving}
             error={error}
             submitText="Update Customer"
-            cancelPath="/admin/customer"
+            cancelPath="/customer"
             navigate={navigate}
             showPassword={false}   // 👈 hide password in edit
         />

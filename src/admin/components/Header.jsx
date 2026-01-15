@@ -34,7 +34,7 @@ export const Header = ({onMenuClick}) => {
                 </button>
 
                 {/* Logo / Title */}
-                <NavLink to='/admin' className="text-xl cursor-pointer font-bold tracking-wide">
+                <NavLink to='/' className="text-xl cursor-pointer font-bold tracking-wide">
                     PashuPal
                 </NavLink>
             </div>

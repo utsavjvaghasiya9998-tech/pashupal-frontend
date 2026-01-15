@@ -98,7 +98,7 @@ export const Milk = () => {
                 </div>
 
                 <NavLink
-                    to="/admin/milk/add"
+                    to="/milk/add"
                     className="flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded"
                 >
                     <MdAdd className="text-xl" />
@@ -115,7 +115,7 @@ export const Milk = () => {
                 actions={(record) => (
                     <>
                         <NavLink
-                            to={`/admin/milk/edit/${record._id}`}
+                            to={`/milk/edit/${record._id}`}
                             className="inline-flex items-center gap-1 bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm"
                         >
                             <FaEdit className="text-lg" />

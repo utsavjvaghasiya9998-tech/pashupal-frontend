@@ -35,7 +35,7 @@ export const AddAnimal = () => {
                 headers: { Authorization: `Bearer ${token}` },
             });
 
-            navigate("/admin/animals");
+            navigate("/animals");
         } catch (err) {
             setError(err?.response?.data?.message || "Failed to add animal");
         } finally {
@@ -112,7 +112,7 @@ export const AddAnimal = () => {
             loading={loading}
             error={error}
             submitText="Save Animal"
-            cancelPath="/admin/animals"
+            cancelPath="/animals"
             navigate={navigate}
         />
     );

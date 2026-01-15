@@ -124,7 +124,7 @@ export const Workers = () => {
                 <h1 className="text-2xl font-bold text-gray-800">Workers</h1>
 
                 <NavLink
-                    to="/admin/worker/add"
+                    to="/worker/add"
                     className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded"
                 >
                     + Add Worker
@@ -140,7 +140,7 @@ export const Workers = () => {
                 actions={(worker) => (
                     <>
                         <NavLink
-                            to={`/admin/worker/edit/${worker._id}`}
+                            to={`/worker/edit/${worker._id}`}
                             className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm"
                         >
                             Edit

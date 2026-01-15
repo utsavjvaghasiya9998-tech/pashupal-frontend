@@ -99,7 +99,7 @@ export const Animal = () => {
                 </div>
 
                 <NavLink
-                    to="/admin/animals/add"
+                    to="/animals/add"
                     className="flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded"
                 >
                     <MdAdd className="text-xl" />
@@ -116,7 +116,7 @@ export const Animal = () => {
                 actions={(animal) => (
                     <>
                         <NavLink
-                            to={`/admin/animals/edit/${animal._id}`}
+                            to={`/animals/edit/${animal._id}`}
                             className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white p-2 rounded"
                         >
                             <FaEdit />

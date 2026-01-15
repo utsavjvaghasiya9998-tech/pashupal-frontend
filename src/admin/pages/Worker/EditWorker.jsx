@@ -65,7 +65,7 @@ export const EditWorker = () => {
                 headers: { Authorization: `Bearer ${token}` },
             });
 
-            navigate("/admin/workers");
+            navigate("/workers");
         } catch (err) {
             console.error("UPDATE WORKER ERROR:", err);
             setError(err.response?.data?.message || "Failed to update worker");
@@ -101,7 +101,7 @@ export const EditWorker = () => {
             error={error}
             success=""
             submitText="Update Worker"
-            cancelPath="/admin/workers"
+            cancelPath="/workers"
             navigate={navigate}
             showPassword={true}   // show password field but optional
         />
