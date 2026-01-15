@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
+import LoginImage from '../../assets/buffalo2.webp'
 const API_URL = import.meta.env.VITE_API_URL;
 
 const Login = () => {
@@ -61,7 +61,7 @@ const Login = () => {
                 {/* ================= LEFT SIDE IMAGE ================= */}
                 <div className="hidden md:block">
                     <img
-                        src="../../../public/buffalo2.webp"
+                        src={LoginImage}
                         alt="Farming"
                         className="w-full h-full object-center"
                     />
