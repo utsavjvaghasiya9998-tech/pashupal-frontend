@@ -30,7 +30,7 @@ export const Milk = () => {
                     },
                 }
             );
-
+            
             setMilkRecords(res.data.data || []);
             setTotalPages(res.data.pagination?.totalPages || 1);
         } catch (err) {

@@ -64,14 +64,14 @@ export const Dashboard = () => {
                 {/* Stat Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ju">
                     <StatCard title="Total Animals" value={stats.animals} icon={<MdPets />} color="green" />
-                    {role==="admin"&&(
-                    <StatCard title="Workers" value={stats.workers} icon={<MdPeople />} color="blue" />
+                    {role === "admin" && (
+                        <StatCard title="Workers" value={stats.workers} icon={<MdPeople />} color="blue" />
                     )}
                     <StatCard title="Total Stock Milk (L)" value={stats.totalStockMilk} icon={<MdLocalDrink />} color="purple" />
                     <StatCard title="Total  Milk (L)" value={stats.totalMilk} icon={<MdLocalDrink />} color="purple" />
-                    <StatCard title="Total Expense" value={stats.totalExpense} icon={<MdCurrencyRupee />} color="yellow" />
-                    {role==="admin"&&(
-                    <StatCard title="Total Income (₹)" value={stats.totalIncome} icon={<MdCurrencyRupee />} color="green" />
+                    {role === "admin" && (<StatCard title="Total Expense" value={stats.totalExpense} icon={<MdCurrencyRupee />} color="yellow" />)}
+                    {role === "admin" && (
+                        <StatCard title="Total Income (₹)" value={stats.totalIncome} icon={<MdCurrencyRupee />} color="green" />
                     )}
                 </div>
 

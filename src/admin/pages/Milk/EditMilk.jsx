@@ -43,7 +43,7 @@ export const EditMilk = () => {
     useEffect(() => {
         const fetchMilk = async () => {
             try {
-                const res = await axios.get(`${API_URL}/worker/milk/edit/${id}`, {
+                const res = await axios.get(`${API_URL}/worker/milk/${id}`, {
                     headers: { Authorization: `Bearer ${token}` },
                 });
 

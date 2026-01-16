@@ -41,7 +41,7 @@ const Login = () => {
             localStorage.setItem("role", role);
             localStorage.setItem("user", JSON.stringify(user));
             if (role === "customer") {
-                navigate('/customer-history')
+                navigate('/customer-dashboard')
             } else {
                 navigate("/");
             }

@@ -15,7 +15,7 @@ export const Expenses = () => {
     const [page, setPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
 
-    const token = localStorage.getItem("adminToken");
+    const token = localStorage.getItem("token");
 
     const fetchExpenses = useCallback(async () => {
         try {
