@@ -1,6 +1,6 @@
 import { MdOutlineMenuOpen } from "react-icons/md";
 import { NavLink } from "react-router-dom";
-import { Logo } from '../../assets/logo.png'
+import Logo from '../../assets/logo1.png'
 const API_URL = import.meta.env.VITE_API_URL;
 export const Header = ({ onMenuClick }) => {
 
@@ -34,9 +34,20 @@ export const Header = ({ onMenuClick }) => {
                 </button>
 
                 {/* Logo / Title */}
-                <NavLink to='/' className="text-xl cursor-pointer font-bold tracking-wide">
-                    {Logo ? <img src={Logo} alt="Logo" />:"PashuPal"}
+                <NavLink to="/" className="flex items-center gap-2 cursor-pointer">
+                    {Logo ? (
+                        <img
+                            src={Logo}
+                            alt="PashuPal Logo"
+                            className="h-30 w-auto object-contain"
+                        />
+                    ) : (
+                        <span className="text-xl font-bold tracking-wide text-white">
+                            PashuPal
+                        </span>
+                    )}
                 </NavLink>
+
             </div>
 
 

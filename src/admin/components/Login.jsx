@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import LoginImage from '../../assets/buffalo2.webp'
+import Logo from '../../assets/logo.png'
 const API_URL = import.meta.env.VITE_API_URL;
 
 const Login = () => {
@@ -39,9 +40,9 @@ const Login = () => {
             localStorage.setItem("token", token);
             localStorage.setItem("role", role);
             localStorage.setItem("user", JSON.stringify(user));
-            if(role==="customer"){
+            if (role === "customer") {
                 navigate('/customer-history')
-            }else{
+            } else {
                 navigate("/");
             }
 
@@ -71,10 +72,25 @@ const Login = () => {
                 <div className="p-8 md:p-10 flex items-center justify-center">
                     <div className="w-full max-w-md">
 
-                        {/* Title */}
-                        <div className="text-center mb-6">
-                            <h1 className="text-3xl font-bold text-green-700">PashuPal Login</h1>
-                            <p className="text-gray-500 text-sm">Login to your dashboard</p>
+                        {/* Logo + Title */}
+                        <div className="flex flex-col items-center gap-0 mb-4">
+
+                            {/* Logo only on mobile & tablet */}
+                            <div className="md:hidden leading-none">
+                                <img
+                                    src={Logo}
+                                    alt="PashuPal Logo"
+                                    className="h-36 w-auto object-contain block"
+                                />
+                            </div>
+
+                            <h1 className="text-3xl font-bold text-green-700 text-center leading-tight">
+                                PashuPal Login
+                            </h1>
+
+                            <p className="text-gray-500 text-sm text-center leading-tight">
+                                Login to your dashboard
+                            </p>
                         </div>
 
                         {/* Error */}
