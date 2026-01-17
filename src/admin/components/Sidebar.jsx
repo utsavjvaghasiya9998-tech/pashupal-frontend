@@ -97,7 +97,7 @@ export const Sidebar = ({ isOpen, setIsOpen }) => {
                         </NavLink>
                     )}
                     {(role === "admin" || role === "worker") && (
-                        <NavLink to="/milk-sell" className={linkClass}>
+                        <NavLink to="/milk-sell" className={linkClass} onClick={() => setIsOpen(false)}>
                             <MdShoppingCart className="text-xl" />
                             <span>Milk Sales</span>
                         </NavLink>
@@ -105,7 +105,7 @@ export const Sidebar = ({ isOpen, setIsOpen }) => {
                     {role === "customer" && (
                         <NavLink
                             to={`/customer-dashboard`}
-                            className={linkClass}
+                            className={linkClass} onClick={() => setIsOpen(false)}
                         >
                             <MdDashboard className="text-xl" />
                             Dashboard
@@ -115,7 +115,7 @@ export const Sidebar = ({ isOpen, setIsOpen }) => {
                     {role === "customer" && (
                         <NavLink
                             to={`/user/payments`}
-                            className={linkClass}
+                            className={linkClass} onClick={() => setIsOpen(false)}
                         >
                             <AiOutlineHistory className="text-xl" />
                             user/payments
@@ -124,7 +124,7 @@ export const Sidebar = ({ isOpen, setIsOpen }) => {
                     {role === "customer" && (
                         <NavLink
                             to={`/customer-history`}
-                            className={linkClass}
+                            className={linkClass} onClick={() => setIsOpen(false)}
                         >
                             <AiOutlineHistory className="text-xl" />
                             History
